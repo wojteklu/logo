@@ -1,0 +1,23 @@
+to qcircle :size
+    repeat 90 [fd(:size) rt(1)]
+end
+
+to petal :size
+    qcircle(:size)
+    rt(90)
+    qcircle(:size)
+    rt(90)
+end
+
+to flower :size
+    repeat 10 [petal(:size) rt(360/10)]
+end
+
+to plant :size
+    flower(:size)
+    bk(135 * :size)
+    petal(:size)
+    bk(65 * :size)
+end
+
+plant(2)

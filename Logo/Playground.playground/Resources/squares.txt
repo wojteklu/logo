@@ -1,0 +1,5 @@
+to square :length
+    repeat 4 [forward(:length) right(90)]
+end
+
+repeat 36 [square(200) right(10)]
