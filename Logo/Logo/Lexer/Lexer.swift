@@ -89,8 +89,6 @@ final class Lexer {
                 return Token(type: .Number, literal: readNumber())
             } else {
                 token = Token(type: .illegal, literal: String(currentChar))
-                print("wojtek")
-                print(currentChar.value)
             }
         }
         
