@@ -24,7 +24,8 @@ final class Evaluator {
             "back": Builtin(identifier: .back),
             "left": Builtin(identifier: .left),
             "right": Builtin(identifier: .right),
-            "random": Builtin(identifier: .random)
+            "random": Builtin(identifier: .random),
+            "setColor": Builtin(identifier: .setcolor)
         ]
     }
     
@@ -45,6 +46,20 @@ final class Evaluator {
         environment.set(constant: .x, value: Number(value: canvasSize.center.x))
         environment.set(constant: .y, value: Number(value: canvasSize.center.y))
         environment.set(constant: .stack, value: Stack())
+        environment.set(name: "black", value: Color(value: .black))
+        environment.set(name: "darkGray", value: Color(value: .darkGray))
+        environment.set(name: "lightGray", value: Color(value: .lightGray))
+        environment.set(name: "white", value: Color(value: .white))
+        environment.set(name: "gray", value: Color(value: .gray))
+        environment.set(name: "red", value: Color(value: .red))
+        environment.set(name: "green", value: Color(value: .green))
+        environment.set(name: "blue", value: Color(value: .blue))
+        environment.set(name: "cyan", value: Color(value: .cyan))
+        environment.set(name: "yellow", value: Color(value: .yellow))
+        environment.set(name: "magenta", value: Color(value: .magenta))
+        environment.set(name: "orange", value: Color(value: .orange))
+        environment.set(name: "purple", value: Color(value: .purple))
+        environment.set(name: "brown", value: Color(value: .brown))
         
         let output = eval(node: program, environment: &environment)
         

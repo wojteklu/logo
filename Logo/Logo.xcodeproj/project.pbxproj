@@ -44,6 +44,7 @@
 		2EEECDFB1EBA772B0068F89C /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEECDFA1EBA772B0068F89C /* String.swift */; };
 		2EEECE041EBBC7EB0068F89C /* RepeatExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEECDFE1EBB8BDD0068F89C /* RepeatExpression.swift */; };
 		2EEECE051EBBC7F60068F89C /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEECE001EBB9F620068F89C /* Foundation.swift */; };
+		92CA0EEC1EDF229100C6A05A /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA0EEB1EDF229100C6A05A /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		2EEECDFA1EBA772B0068F89C /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		2EEECDFE1EBB8BDD0068F89C /* RepeatExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepeatExpression.swift; sourceTree = "<group>"; };
 		2EEECE001EBB9F620068F89C /* Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Foundation.swift; sourceTree = "<group>"; };
+		92CA0EEB1EDF229100C6A05A /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,13 +136,14 @@
 		2E6ACB7F1EBA445500DD011B /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				2E6ACB821EBA445500DD011B /* Builtin.swift */,
 				2E6ACB881EBA445500DD011B /* Object.swift */,
 				2E6ACB861EBA445500DD011B /* Number.swift */,
 				2E6ACB811EBA445500DD011B /* Boolean.swift */,
-				2E6ACB871EBA445500DD011B /* Null.swift */,
+				92CA0EEB1EDF229100C6A05A /* Color.swift */,
 				2E6ACB841EBA445500DD011B /* Error.swift */,
 				2E6ACB851EBA445500DD011B /* Function.swift */,
-				2E6ACB821EBA445500DD011B /* Builtin.swift */,
+				2E6ACB871EBA445500DD011B /* Null.swift */,
 				2E6ACB831EBA445500DD011B /* CommandObject.swift */,
 				2E5289721EBE6D5B009C39A8 /* Stack.swift */,
 			);
@@ -373,6 +376,7 @@
 				2E6ACBB01EBA445500DD011B /* ExpressionStatement.swift in Sources */,
 				2EEECE041EBBC7EB0068F89C /* RepeatExpression.swift in Sources */,
 				2E6ACB9D1EBA445500DD011B /* Canvas.swift in Sources */,
+				92CA0EEC1EDF229100C6A05A /* Color.swift in Sources */,
 				2E6ACBB91EBA445500DD011B /* Variable.swift in Sources */,
 				2E6ACBA51EBA445500DD011B /* Error.swift in Sources */,
 				2E6ACBA91EBA445500DD011B /* Object.swift in Sources */,

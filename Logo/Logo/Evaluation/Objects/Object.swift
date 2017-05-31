@@ -17,6 +17,7 @@ enum ObjectType {
     case builtin
     case command
     case stack
+    case color
 }
 
 protocol Object {
