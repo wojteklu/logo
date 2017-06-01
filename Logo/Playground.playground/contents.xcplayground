@@ -8,5 +8,6 @@
         <page name='Random'/>
         <page name='Plant'/>
         <page name='Tree'/>
+        <page name='Colors'/>
     </pages>
 </playground>

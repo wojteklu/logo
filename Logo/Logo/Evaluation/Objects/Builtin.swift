@@ -14,6 +14,7 @@ enum BuiltinType {
     case forward
     case back
     case random
+    case setcolor
 }
 
 struct Builtin: Object {
@@ -30,6 +31,8 @@ struct Builtin: Object {
             return back
         case .random:
             return random
+        case .setcolor:
+            return setColor
         }
     }
     

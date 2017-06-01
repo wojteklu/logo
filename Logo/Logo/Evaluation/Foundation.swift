@@ -13,6 +13,7 @@ enum Command {
     case right(heading: CGFloat)
     case forward(fromX: CGFloat, fromY: CGFloat, toX: CGFloat, toY: CGFloat)
     case back(fromX: CGFloat, fromY: CGFloat, toX: CGFloat, toY: CGFloat)
+    case change(color: NSColor)
 }
 
 func left(args: [Object], environment: inout Environment) -> Object {
@@ -122,4 +123,17 @@ func random(args: [Object], environment: inout Environment) -> Object {
     
     let random = Int(arc4random_uniform(UInt32(argument.value)))
     return Number(value: CGFloat(random))
+}
+
+func setColor(args: [Object], environment: inout Environment) -> Object {
+
+    guard args.count == 1 else {
+        return Error(message: "wrong number of arguments in setColor function")
+    }
+    
+    guard let color = args[0] as? Color else {
+        return Error(message: "wrong type of argument in setColor function")
+    }
+    
+    return CommandObject(value: .change(color: color.value))
 }

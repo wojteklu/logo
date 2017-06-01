@@ -37,6 +37,9 @@ class Canvas {
                 drawLine(from: CGPoint(x: fromX, y: fromY), to: CGPoint(x: toX, y: toY))
             case .back(let fromX, let fromY, let toX, let toY):
                 drawLine(from: CGPoint(x: fromX, y: fromY), to: CGPoint(x: toX, y: toY))
+            case .change(let color):
+                bitmapContext.setStrokeColor(color.cgColor)
+                break
             }
         }
         
