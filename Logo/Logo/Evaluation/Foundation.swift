@@ -14,6 +14,8 @@ enum Command {
     case forward(fromX: CGFloat, fromY: CGFloat, toX: CGFloat, toY: CGFloat)
     case back(fromX: CGFloat, fromY: CGFloat, toX: CGFloat, toY: CGFloat)
     case change(color: NSColor)
+    case penUp
+    case penDown
 }
 
 func left(args: [Object], environment: inout Environment) -> Object {
@@ -136,4 +138,14 @@ func setColor(args: [Object], environment: inout Environment) -> Object {
     }
     
     return CommandObject(value: .change(color: color.value))
+}
+
+func penUp(args: [Object], environment: inout Environment) -> Object {
+    
+    return CommandObject(value: .penUp)
+}
+
+func penDown(args: [Object], environment: inout Environment) -> Object {
+    
+    return CommandObject(value: .penDown)
 }

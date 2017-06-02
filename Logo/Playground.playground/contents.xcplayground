@@ -9,5 +9,6 @@
         <page name='Plant'/>
         <page name='Tree'/>
         <page name='Colors'/>
+        <page name='Penup PenDown'/>
     </pages>
 </playground>
