@@ -25,7 +25,9 @@ final class Evaluator {
             "left": Builtin(identifier: .left),
             "right": Builtin(identifier: .right),
             "random": Builtin(identifier: .random),
-            "setColor": Builtin(identifier: .setcolor)
+            "setColor": Builtin(identifier: .setColor),
+            "penUp": Builtin(identifier: .penUp),
+            "penDown": Builtin(identifier: .penDown),
         ]
     }
     

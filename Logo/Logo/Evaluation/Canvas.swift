@@ -11,6 +11,7 @@ import Foundation
 class Canvas {
     private let bitmapContext: CGContext
     private var heading: CGFloat = 0
+    private var canDraw = true
     let size: CGSize
 
     init(size: CGSize) {
@@ -39,7 +40,10 @@ class Canvas {
                 drawLine(from: CGPoint(x: fromX, y: fromY), to: CGPoint(x: toX, y: toY))
             case .change(let color):
                 bitmapContext.setStrokeColor(color.cgColor)
-                break
+            case .penUp:
+                canDraw = false
+            case .penDown:
+                canDraw = true
             }
         }
         
@@ -69,9 +73,11 @@ class Canvas {
     }
     
     private func drawLine(from start: CGPoint, to end: CGPoint) {
-        bitmapContext.move(to: start)
-        bitmapContext.addLine(to: end)
-        bitmapContext.strokePath()
+        if canDraw {
+            bitmapContext.move(to: start)
+            bitmapContext.addLine(to: end)
+            bitmapContext.strokePath()
+        }
     }
     
 }

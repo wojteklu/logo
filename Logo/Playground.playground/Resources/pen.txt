@@ -1,0 +1,7 @@
+setColor(yellow)
+repeat 5 [fd(300) rt(144)]
+penUp()
+back(200)
+penDown()
+setColor(purple)
+repeat 360 [fd(3) rt(1)]
