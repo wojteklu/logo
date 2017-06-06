@@ -23,6 +23,13 @@ class Canvas {
                                   bytesPerRow: Int(size.width) * 4,
                                   space: CGColorSpaceCreateDeviceRGB(),
                                   bitmapInfo: CGImageAlphaInfo.premultipliedFirst.rawValue)!
+        self.setBitmapBackground(color: .white)
+    }
+
+    func setBitmapBackground(color: CGColor) {
+        bitmapContext.setFillColor(color)
+        let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+        bitmapContext.fill(rect)
     }
     
     func draw(commands: [Command]) -> NSImage {
