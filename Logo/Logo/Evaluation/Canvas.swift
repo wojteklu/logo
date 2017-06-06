@@ -28,7 +28,7 @@ class Canvas {
 
     func setBitmapBackground(color: CGColor) {
         bitmapContext.setFillColor(color)
-        let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+        let rect = CGRect(origin: .zero, size: size)
         bitmapContext.fill(rect)
     }
     
