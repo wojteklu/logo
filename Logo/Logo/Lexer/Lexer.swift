@@ -99,7 +99,7 @@ final class Lexer {
 
     private func readChar() {
         let nextPosition = currentPosition + 1
-        currentChar = (nextPosition >= code.characters.count) ? UnicodeScalar(0) : code[nextPosition]
+        currentChar = (nextPosition >= code.count) ? UnicodeScalar(0) : code[nextPosition]
         currentPosition = nextPosition
     }
     
@@ -131,7 +131,7 @@ final class Lexer {
     
     private func nextChar() -> UnicodeScalar {
         let nextPosition = currentPosition + 1
-        if nextPosition >= code.characters.count {
+        if nextPosition >= code.count {
             return UnicodeScalar(0)
         } else {
             return code[nextPosition]

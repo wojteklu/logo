@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='macos'>
+<playground version='6.0' target-platform='macos' last-migration='0920'>
     <pages>
         <page name='Square'/>
         <page name='Circle'/>

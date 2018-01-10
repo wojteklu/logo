@@ -67,8 +67,8 @@ class Canvas {
             paragraphStyle.alignment = NSTextAlignment.center
             
             let attributes = [
-                NSFontAttributeName: NSFont.systemFont(ofSize: 50),
-                NSParagraphStyleAttributeName: paragraphStyle
+                NSAttributedStringKey.font: NSFont.systemFont(ofSize: 50),
+                NSAttributedStringKey.paragraphStyle: paragraphStyle
             ]
             
             text.draw(in: rect, withAttributes: attributes)

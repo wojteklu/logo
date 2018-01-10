@@ -1,5 +1,5 @@
 # Logo interpreter 🐢
-[![Swift 3.1](https://img.shields.io/badge/swift-3.1-orange.svg?style=flat)](#)
+[![Swift 4.0](https://img.shields.io/badge/swift-4.0-orange.svg?style=flat)](#)
 [![@wojteklu](https://img.shields.io/badge/contact-@wojteklu-blue.svg?style=flat)](https://twitter.com/wojteklu)
 
 >An interpreter is a computer program that directly executes instructions written in a programming or scripting language, without previously compiling them into a machine language program.
