@@ -11,7 +11,6 @@ import Foundation
 final class Evaluator {
     private let builtins: [String: Builtin]
     private var commands: [CommandObject] = []
-    private let canvasSize: CGSize = NSSize(width: 800, height: 800)
     private let startHeading: CGFloat = -90
 
     init() {
@@ -31,7 +30,7 @@ final class Evaluator {
         ]
     }
     
-    func eval(code: String) -> NSImage {
+    func eval(code: String, canvasSize: CGSize) -> NSImage {
         let lexer = Lexer(code: code)
         let parser = Parser(lexer: lexer)
         let program = parser.parse()
