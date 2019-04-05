@@ -1,11 +1,3 @@
-//
-//  Token.swift
-//  Logo
-//
-//  Created by Wojtek on 01/05/2017.
-//  Copyright © 2017 wojteklu. All rights reserved.
-//
-
 struct Token: Equatable {
     let type: TokenType
     let literal: String

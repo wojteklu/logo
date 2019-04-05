@@ -1,11 +1,3 @@
-//
-//  Stack.swift
-//  Logo
-//
-//  Created by Wojtek on 06/05/2017.
-//  Copyright © 2017 wojteklu. All rights reserved.
-//
-
 import Foundation
 
 struct Stack: Object {
