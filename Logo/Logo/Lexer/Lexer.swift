@@ -1,11 +1,3 @@
-//
-//  Lexer.swift
-//  Logo
-//
-//  Created by Wojtek on 01/05/2017.
-//  Copyright © 2017 Logo. All rights reserved.
-//
-
 final class Lexer {
     private let code: String
     private var currentPosition: Int
