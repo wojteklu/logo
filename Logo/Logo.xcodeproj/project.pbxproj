@@ -131,7 +131,6 @@
 		2ED38E642251D708007F72D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ED38E672251D708007F72D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2ED38E692251D708007F72D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2ED38E6A2251D708007F72D0 /* IDE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IDE.entitlements; sourceTree = "<group>"; };
 		2ED38E6E2251DBAD007F72D0 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		2ED38E722251EDBE007F72D0 /* LogoSyntaxTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoSyntaxTextView.swift; sourceTree = "<group>"; };
 		2EDCBE2D1EBE19FE00A19680 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
@@ -286,7 +285,6 @@
 		2EC0E4E62252B8BB00AA0BAD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2ED38E6A2251D708007F72D0 /* IDE.entitlements */,
 				2ED38E662251D708007F72D0 /* Main.storyboard */,
 				2ED38E642251D708007F72D0 /* Assets.xcassets */,
 			);
@@ -412,6 +410,9 @@
 						DevelopmentTeam = 68JSZTM8V5;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+					};
+					2ED38E5D2251D707007F72D0 = {
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -748,7 +749,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = IDE/Resources/IDE.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -774,7 +775,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = IDE/Resources/IDE.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
